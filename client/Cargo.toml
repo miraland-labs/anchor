@@ -1,0 +1,26 @@
+[package]
+name = "solarti-anchor-client"
+version = "0.27.0"
+authors = ["Serum Foundation <foundation@projectserum.com>"]
+rust-version = "1.60"
+edition = "2021"
+license = "Apache-2.0"
+description = "Rust client for Anchor programs"
+
+[features]
+debug = []
+
+[dependencies]
+solarti-anchor-lang = { path = "../lang", version = "0.27.0" }
+anyhow = "1.0.32"
+regex = "1.4.5"
+serde = { version = "1.0.122", features = ["derive"] }
+miraland-client = "1.14.17-rc5"
+miraland-sdk = "1.14.17-rc5"
+miraland-account-decoder = "1.14.17-rc5"
+thiserror = "1.0.20"
+url = "2.2.2"
+
+[lib]
+crate-type = ["lib"]
+name = "anchor_client"

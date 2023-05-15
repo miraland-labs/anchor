@@ -1,0 +1,31 @@
+[profile.release]
+lto = true
+
+[profile.release.package.solarti-anchor-cli]
+codegen-units = 1
+
+[workspace]
+members = [
+    "cli",
+    "client",
+    "lang",
+    "lang/attribute/*",
+    "lang/derive/*",
+    "lang/syn",
+]
+exclude = [
+    "tests/swap/deps/openbook-dex",
+    "tests/cfo/deps/openbook-dex",
+    "tests/cashiers-check/programs/cashiers-check",
+    "tests/cfo/programs/cfo",
+    "tests/escrow/programs/escrow",
+    "tests/ido-pool/programs/ido-pool",
+    "tests/lockup/programs/lockup",
+    "tests/lockup/programs/registry",
+    "tests/misc/programs/misc",
+    "tests/misc/programs/misc-optional",
+    "tests/spl/token-proxy/programs/token-proxy",
+    "tests/swap/programs/swap",
+    "tests/sysvars/programs/sysvars",
+    "tests/tictactoe/programs/tictactoe",
+]
