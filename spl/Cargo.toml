@@ -1,5 +1,5 @@
 [package]
-name = "solarti-anchor-solarti"
+name = "solarti-anchor-spl"
 version = "0.27.0"
 authors = ["Serum Foundation <foundation@projectserum.com>"]
 rust-version = "1.60"
@@ -21,7 +21,7 @@ metadata = ["miraplex-token-metadata"]
 dex = ["serum_dex"]
 
 [dependencies]
-anchor-lang = { path = "../lang", version = "0.27.0", features = ["derive"] }
+anchor-lang = { path = "../lang", package = "solarti-anchor-lang", version = "0.27.0", features = ["derive"] }
 borsh = { version = "^0.9", optional = true }
 serum_dex = { git = "https://github.com/openbook-dex/program/", rev = "1be91f2", version = "0.4.0", features = ["no-entrypoint"], optional = true }
 miraland-program = "1.14.17-rc5"
