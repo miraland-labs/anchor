@@ -1,7 +1,7 @@
 import assert from "assert";
 import { splTokenProgram } from "@coral-xyz/spl-token";
-import { Keypair, PublicKey, SYSVAR_RENT_PUBKEY } from "@solana/web3.js";
-import { BN } from "@coral-xyz/anchor";
+import { Keypair, PublicKey, SYSVAR_RENT_PUBKEY } from "@solarti/web3.js";
+import { BN } from "@solarti/anchor";
 
 import { NATIVE_MINT_PK, SPL_TOKEN_PROGRAM_ID } from "../constants";
 import {

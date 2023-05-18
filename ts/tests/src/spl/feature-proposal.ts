@@ -1,13 +1,13 @@
 import { splFeatureProposalProgram } from "@coral-xyz/spl-feature-proposal";
 import { splTokenProgram } from "@coral-xyz/spl-token";
-import { BN } from "@coral-xyz/anchor";
+import { BN } from "@solarti/anchor";
 import {
   Keypair,
   PublicKey,
   SystemProgram,
   SYSVAR_CLOCK_PUBKEY,
   SYSVAR_RENT_PUBKEY,
-} from "@solana/web3.js";
+} from "@solarti/web3.js";
 
 import {
   SPL_FEATURE_PROPOSAL_PROGRAM_ID,

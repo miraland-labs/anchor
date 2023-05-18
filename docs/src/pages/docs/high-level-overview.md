@@ -12,7 +12,7 @@ When you start up a new Anchor project, you'll see the following:
 use anchor_lang::prelude::*;
 
 // declare an id for your program
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("AnchoL61Nt2sgXvrXYUHxRQgEgaJ4ueMg5xJQVyFJ5Gs");
 
 // write your business logic here
 #[program]

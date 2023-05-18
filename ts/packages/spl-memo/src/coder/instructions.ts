@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { Idl, InstructionCoder } from "@coral-xyz/anchor";
+import { Idl, InstructionCoder } from "@solarti/anchor";
 
 export class SplMemoInstructionCoder implements InstructionCoder {
   constructor(_idl: Idl) {}

@@ -2,7 +2,7 @@
 // immediately after a deploy.
 
 const serumCmn = require("@project-serum/common");
-const anchor = require("@coral-xyz/anchor");
+const anchor = require("@solarti/anchor");
 const PublicKey = anchor.web3.PublicKey;
 
 module.exports = async function (provider) {

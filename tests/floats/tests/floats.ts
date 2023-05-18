@@ -1,6 +1,6 @@
-import * as anchor from "@coral-xyz/anchor";
-import { Program, getProvider } from "@coral-xyz/anchor";
-import { Keypair, SystemProgram } from "@solana/web3.js";
+import * as anchor from "@solarti/anchor";
+import { Program, getProvider } from "@solarti/anchor";
+import { Keypair, SystemProgram } from "@solarti/web3.js";
 import { Floats } from "../target/types/floats";
 import { assert } from "chai";
 

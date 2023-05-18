@@ -1,5 +1,5 @@
-import * as anchor from "@coral-xyz/anchor";
-import { Program } from "@coral-xyz/anchor";
+import * as anchor from "@solarti/anchor";
+import { Program } from "@solarti/anchor";
 import { assert } from "chai";
 import { ValidatorClone } from "../target/types/validator_clone";
 

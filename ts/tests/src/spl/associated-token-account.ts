@@ -1,6 +1,6 @@
 import { splAssociatedTokenAccountProgram } from "@coral-xyz/spl-associated-token-account";
 import { splTokenProgram } from "@coral-xyz/spl-token";
-import { Keypair, PublicKey, SystemProgram } from "@solana/web3.js";
+import { Keypair, PublicKey, SystemProgram } from "@solarti/web3.js";
 
 import { SPL_ATA_PROGRAM_ID, SPL_TOKEN_PROGRAM_ID } from "../constants";
 import {

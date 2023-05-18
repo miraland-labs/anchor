@@ -1,6 +1,6 @@
 import assert from "assert";
 import { splMemoProgram } from "@coral-xyz/spl-memo";
-import { Keypair } from "@solana/web3.js";
+import { Keypair } from "@solarti/web3.js";
 
 import { SPL_MEMO_PROGRAM_ID } from "../constants";
 import { confirmTx, getProvider, loadKp, test } from "../utils";

@@ -42,7 +42,7 @@ use std::ops::{Deref, DerefMut};
 /// use anchor_lang::prelude::*;
 /// use other_program::Auth;
 ///
-/// declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+/// declare_id!("AnchoL61Nt2sgXvrXYUHxRQgEgaJ4ueMg5xJQVyFJ5Gs");
 ///
 /// #[program]
 /// mod hello_anchor {
@@ -64,7 +64,7 @@ use std::ops::{Deref, DerefMut};
 /// #[derive(Accounts)]
 /// pub struct SetData<'info> {
 ///     #[account(mut)]
-///     pub my_account: Account<'info, MyData> // checks that my_account.info.owner == Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS
+///     pub my_account: Account<'info, MyData> // checks that my_account.info.owner == AnchoL61Nt2sgXvrXYUHxRQgEgaJ4ueMg5xJQVyFJ5Gs
 ///     pub auth_account: Account<'info, Auth> // checks that auth_account.info.owner == FEZGUxNhZWpYPj9MJCrZJvUo1iF9ys34UHx52y4SzVW9
 /// }
 ///

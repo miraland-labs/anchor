@@ -1,7 +1,7 @@
 // @ts-nocheck
 import * as B from "@native-to-anchor/buffer-layout";
-import { AccountsCoder, Idl } from "@coral-xyz/anchor";
-import { IdlTypeDef } from "@coral-xyz/anchor/dist/cjs/idl";
+import { AccountsCoder, Idl } from "@solarti/anchor";
+import { IdlTypeDef } from "@solarti/anchor/dist/cjs/idl";
 
 export class SplFeatureProposalAccountsCoder<A extends string = string>
   implements AccountsCoder

@@ -1,10 +1,10 @@
 import { PublicKey } from "@solarti/web3.js";
 
 export const TOKEN_PROGRAM_ID = new PublicKey(
-  "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+  "Token4Q2B47VCdUy8u3rSTMMk2bGA1k7eN8qfKSzdiM"
 );
 export const ASSOCIATED_PROGRAM_ID = new PublicKey(
-  "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+  "ATAccPjxdgWfJKKN4PmfJ55FbEDEwD8zJUwVjuL9MuHy"
 );
 
 export function associatedAddress({

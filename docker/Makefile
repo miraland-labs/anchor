@@ -6,11 +6,11 @@ ANCHOR_CLI=v0.27.0
 #
 # Solana toolchain.
 #
-SOLANA_CLI=v1.14.16
+MIRALAND_CLI=v1.14.17
 #
 # Build version should match the Anchor cli version.
 #
-IMG_ORG ?= projectserum
+IMG_ORG ?= miralandlabs  # MI, vanilla: projectserum
 IMG_VER ?= $(ANCHOR_CLI)
 
 .PHONY: build build-push build-shell publish
@@ -20,7 +20,7 @@ default:
 build: build/Dockerfile
 	@docker build \
 	--build-arg ANCHOR_CLI=$(ANCHOR_CLI) \
-	--build-arg SOLANA_CLI=$(SOLANA_CLI) \
+	--build-arg MIRALAND_CLI=$(MIRALAND_CLI) \
 	$@ -t $(IMG_ORG)/$@:$(IMG_VER)
 
 build-push:

@@ -1,6 +1,6 @@
-import { AnchorProvider, setProvider } from "@coral-xyz/anchor";
+import { AnchorProvider, setProvider } from "@solarti/anchor";
 import { splTokenProgram } from "@coral-xyz/spl-token";
-import { Keypair, SYSVAR_RENT_PUBKEY, PublicKey } from "@solana/web3.js";
+import { Keypair, SYSVAR_RENT_PUBKEY, PublicKey } from "@solarti/web3.js";
 import BN from "bn.js";
 import { assert } from "chai";
 

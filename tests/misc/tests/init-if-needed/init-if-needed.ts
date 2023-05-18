@@ -1,7 +1,7 @@
-import * as anchor from "@coral-xyz/anchor";
-import { AnchorError, Program } from "@coral-xyz/anchor";
+import * as anchor from "@solarti/anchor";
+import { AnchorError, Program } from "@solarti/anchor";
 import { InitIfNeeded } from "../../target/types/init_if_needed";
-import { SystemProgram, LAMPORTS_PER_SOL } from "@solana/web3.js";
+import { SystemProgram, LAMPORTS_PER_SOL } from "@solarti/web3.js";
 import { expect } from "chai";
 
 describe("init-if-needed", () => {

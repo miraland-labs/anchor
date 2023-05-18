@@ -22,7 +22,7 @@ and copy the following code.
 ```rust
 use anchor_lang::prelude::*;
 
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("AnchoL61Nt2sgXvrXYUHxRQgEgaJ4ueMg5xJQVyFJ5Gs");
 
 #[program]
 pub mod puppet {
@@ -147,9 +147,9 @@ impl<'info> PullStrings<'info> {
 We can verify that everything works as expected by replacing the contents of the `puppet.ts` file with:
 
 ```ts
-import * as anchor from '@coral-xyz/anchor'
-import { Program } from '@coral-xyz/anchor'
-import { Keypair } from '@solana/web3.js'
+import * as anchor from '@solarti/anchor'
+import { Program } from '@solarti/anchor'
+import { Keypair } from '@solarti/web3.js'
 import { expect } from 'chai'
 import { Puppet } from '../target/types/puppet'
 import { PuppetMaster } from '../target/types/puppet_master'
@@ -286,9 +286,9 @@ impl<'info> PullStrings<'info> {
 Finally, change the test:
 
 ```ts
-import * as anchor from '@coral-xyz/anchor'
-import { Program } from '@coral-xyz/anchor'
-import { Keypair } from '@solana/web3.js'
+import * as anchor from '@solarti/anchor'
+import { Program } from '@solarti/anchor'
+import { Keypair } from '@solarti/web3.js'
 import { Puppet } from '../target/types/puppet'
 import { PuppetMaster } from '../target/types/puppet_master'
 import { expect } from 'chai'

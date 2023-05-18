@@ -1,7 +1,7 @@
-import * as anchor from "@coral-xyz/anchor";
+import * as anchor from "@solarti/anchor";
 import BN from "bn.js";
-import { Keypair, PublicKey } from "@solana/web3.js";
-import { Program } from "@coral-xyz/anchor";
+import { Keypair, PublicKey } from "@solarti/web3.js";
+import { Program } from "@solarti/anchor";
 import { PdaDerivation } from "../target/types/pda_derivation";
 import { expect } from "chai";
 const encode = anchor.utils.bytes.utf8.encode;

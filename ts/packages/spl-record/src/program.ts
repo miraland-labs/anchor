@@ -1,5 +1,5 @@
-import { PublicKey } from "@solana/web3.js";
-import { Program, AnchorProvider } from "@coral-xyz/anchor";
+import { PublicKey } from "@solarti/web3.js";
+import { Program, AnchorProvider } from "@solarti/anchor";
 
 import { SplRecordCoder } from "./coder";
 

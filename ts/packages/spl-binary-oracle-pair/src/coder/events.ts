@@ -1,5 +1,5 @@
-import { Idl, Event, EventCoder } from "@coral-xyz/anchor";
-import { IdlEvent } from "@coral-xyz/anchor/dist/cjs/idl";
+import { Idl, Event, EventCoder } from "@solarti/anchor";
+import { IdlEvent } from "@solarti/anchor/dist/cjs/idl";
 
 export class SplBinaryOraclePairEventsCoder implements EventCoder {
   constructor(_idl: Idl) {}

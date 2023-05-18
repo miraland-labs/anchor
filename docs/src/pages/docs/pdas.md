@@ -114,7 +114,7 @@ and copy the following code
 ```rust
 use anchor_lang::prelude::*;
 
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("AnchoL61Nt2sgXvrXYUHxRQgEgaJ4ueMg5xJQVyFJ5Gs");
 
 #[program]
 pub mod game {
@@ -190,9 +190,9 @@ pub fn change_user_name(ctx: Context<ChangeUserName>, new_name: String) -> Resul
 Finally, let's add a test. Copy this into `game.ts`
 
 ```ts
-import * as anchor from '@coral-xyz/anchor'
-import { Program } from '@coral-xyz/anchor'
-import { PublicKey } from '@solana/web3.js'
+import * as anchor from '@solarti/anchor'
+import { Program } from '@solarti/anchor'
+import { PublicKey } from '@solarti/web3.js'
 import { Game } from '../target/types/game'
 import { expect } from 'chai'
 
@@ -306,9 +306,9 @@ The `authority` account is now an `UncheckedAccount` instead of a `Signer`. When
 Finally, this is the new `puppet.ts`:
 
 ```ts
-import * as anchor from '@coral-xyz/anchor'
-import { Program } from '@coral-xyz/anchor'
-import { Keypair, PublicKey } from '@solana/web3.js'
+import * as anchor from '@solarti/anchor'
+import { Program } from '@solarti/anchor'
+import { Keypair, PublicKey } from '@solarti/web3.js'
 import { Puppet } from '../target/types/puppet'
 import { PuppetMaster } from '../target/types/puppet_master'
 import { expect } from 'chai'

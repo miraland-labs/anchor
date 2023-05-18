@@ -14,7 +14,7 @@ use serum_dex::matching::{OrderType, Side as SerumSide};
 use serum_dex::state::MarketState;
 use std::num::NonZeroU64;
 
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("AnchoL61Nt2sgXvrXYUHxRQgEgaJ4ueMg5xJQVyFJ5Gs");
 
 #[program]
 pub mod swap {

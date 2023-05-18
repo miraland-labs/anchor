@@ -21,7 +21,7 @@ git grep -l $(cat VERSION) -- ':!**/yarn.lock' ':!CHANGELOG.md' ':!Cargo.lock' '
     -e "s/$(cat VERSION)/$1/g"
 
 # Potential for collisions in package.json files, handle those separately
-# Replace only matching "version": "x.xx.x" and "@coral-xyz/anchor": "x.xx.x"
+# Replace only matching "version": "x.xx.x" and "@solarti/anchor": "x.xx.x"
 git grep -l $(cat VERSION) -- '**/package.json' | \
     xargs sed "${sedi[@]}" \
     -e "s/@coral-xyz\/anchor\": \"$(cat VERSION)\"/@coral-xyz\/anchor\": \"$1\"/g" \

@@ -1,4 +1,4 @@
-import { Idl, StateCoder } from "@coral-xyz/anchor";
+import { Idl, StateCoder } from "@solarti/anchor";
 
 export class SplAssociatedTokenAccountStateCoder implements StateCoder {
   constructor(_idl: Idl) {}

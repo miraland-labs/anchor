@@ -1,7 +1,7 @@
 use anchor_lang::prelude::*;
 
 // Needed to declare accounts.
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("AnchoL61Nt2sgXvrXYUHxRQgEgaJ4ueMg5xJQVyFJ5Gs");
 
 mod inside_mod {
     use super::*;

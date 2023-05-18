@@ -1,6 +1,6 @@
-import * as anchor from "@coral-xyz/anchor";
-import { Program, AnchorError } from "@coral-xyz/anchor";
-import { Keypair, Transaction, TransactionInstruction } from "@solana/web3.js";
+import * as anchor from "@solarti/anchor";
+import { Program, AnchorError } from "@solarti/anchor";
+import { Keypair, Transaction, TransactionInstruction } from "@solarti/web3.js";
 import { TOKEN_PROGRAM_ID, Token } from "@solana/spl-token";
 import { assert, expect } from "chai";
 import { Errors } from "../target/types/errors";
@@ -344,7 +344,7 @@ describe("errors", () => {
       "Program log: Left:",
       "Program log: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
       "Program log: Right:",
-      "Program log: Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS",
+      "Program log: AnchoL61Nt2sgXvrXYUHxRQgEgaJ4ueMg5xJQVyFJ5Gs",
     ]);
   });
 

@@ -1,6 +1,6 @@
-import * as anchor from "@coral-xyz/anchor";
-import { Program } from "@coral-xyz/anchor";
-import { PublicKey } from "@solana/web3.js";
+import * as anchor from "@solarti/anchor";
+import { Program } from "@solarti/anchor";
+import { PublicKey } from "@solarti/web3.js";
 import { MultipleSuites } from "../../../target/types/multiple_suites";
 import { assert } from "chai";
 

@@ -1,7 +1,7 @@
 import assert from "assert";
 import { splStakePoolProgram } from "@coral-xyz/spl-stake-pool";
 import { splTokenProgram } from "@coral-xyz/spl-token";
-import { BN } from "@coral-xyz/anchor";
+import { BN } from "@solarti/anchor";
 import {
   Keypair,
   LAMPORTS_PER_SOL,
@@ -13,7 +13,7 @@ import {
   SYSVAR_RENT_PUBKEY,
   SYSVAR_STAKE_HISTORY_PUBKEY,
   VoteProgram,
-} from "@solana/web3.js";
+} from "@solarti/web3.js";
 
 import { SPL_STAKE_POOL_PROGRAM_ID, SPL_TOKEN_PROGRAM_ID } from "../constants";
 import {

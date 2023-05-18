@@ -1,5 +1,5 @@
-import * as anchor from "@coral-xyz/anchor";
-import { Program, BN, AnchorError, Wallet, IdlEvents } from "@coral-xyz/anchor";
+import * as anchor from "@solarti/anchor";
+import { Program, BN, AnchorError, Wallet, IdlEvents } from "@solarti/anchor";
 import {
   PublicKey,
   Keypair,
@@ -8,7 +8,7 @@ import {
   VersionedTransaction,
   AddressLookupTableProgram,
   TransactionMessage,
-} from "@solana/web3.js";
+} from "@solarti/web3.js";
 import {
   TOKEN_PROGRAM_ID,
   Token,

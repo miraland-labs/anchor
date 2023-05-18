@@ -1,4 +1,4 @@
-import { Idl, Coder } from "@coral-xyz/anchor";
+import { Idl, Coder } from "@solarti/anchor";
 
 import { SplTokenLendingAccountsCoder } from "./accounts";
 import { SplTokenLendingEventsCoder } from "./events";

@@ -1,7 +1,7 @@
 {
   "name": "@solarti/borsh",
-  "version": "0.27.0",
-  "description": "Anchor Borsh derived from coral-xyz/borsh",
+  "version": "0.27.1",
+  "description": "Solarti Anchor Borsh derived from coral-xyz/borsh",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
@@ -20,6 +20,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
+    "@solarti/web3.js": "1.73.2-rc4",
     "bn.js": "^5.1.2",
     "buffer-layout": "^1.2.0"
   },

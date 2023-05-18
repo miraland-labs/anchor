@@ -1,4 +1,4 @@
-import { Idl, TypesCoder } from "@coral-xyz/anchor";
+import { Idl, TypesCoder } from "@solarti/anchor";
 
 export class SplTokenLendingTypesCoder implements TypesCoder {
   constructor(_idl: Idl) {}

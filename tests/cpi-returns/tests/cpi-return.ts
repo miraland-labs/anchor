@@ -1,10 +1,10 @@
 import assert from "assert";
-import * as anchor from "@coral-xyz/anchor";
+import * as anchor from "@solarti/anchor";
 import * as borsh from "borsh";
-import { Program } from "@coral-xyz/anchor";
+import { Program } from "@solarti/anchor";
 import { Callee } from "../target/types/callee";
 import { Caller } from "../target/types/caller";
-import { ConfirmOptions } from "@solana/web3.js";
+import { ConfirmOptions } from "@solarti/web3.js";
 
 const { SystemProgram } = anchor.web3;
 

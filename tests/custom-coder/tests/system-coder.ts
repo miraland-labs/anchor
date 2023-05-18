@@ -1,5 +1,5 @@
-import * as anchor from "@coral-xyz/anchor";
-import { Native } from "@coral-xyz/anchor";
+import * as anchor from "@solarti/anchor";
+import { Native } from "@solarti/anchor";
 import { TOKEN_PROGRAM_ID } from "@solana/spl-token";
 import {
   Keypair,
@@ -8,7 +8,7 @@ import {
   PublicKey,
   SystemProgram,
   SYSVAR_RECENT_BLOCKHASHES_PUBKEY,
-} from "@solana/web3.js";
+} from "@solarti/web3.js";
 import * as assert from "assert";
 import BN from "bn.js";
 
