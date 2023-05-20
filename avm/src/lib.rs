@@ -91,7 +91,7 @@ pub fn install_version(version: &Version, force: bool) -> Result<()> {
             "https://github.com/miraland-labs/anchor",
             "--tag",
             &format!("v{}", &version),
-            "anchor-cli",
+            "solarti-anchor-cli",
             "--locked",
             "--root",
             AVM_HOME.to_str().unwrap(),
