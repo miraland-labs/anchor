@@ -30,3 +30,4 @@ exclude = [
     "tests/sysvars/programs/sysvars",
     "tests/tictactoe/programs/tictactoe",
 ]
+resolver = "2"

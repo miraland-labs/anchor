@@ -16,13 +16,13 @@ case "$(uname)" in
   Darwin*) sedi=(-i "")
 esac
 
-git grep -l $(cat VERSION) -- ':!**/yarn.lock' ':!CHANGELOG.md' ':!Cargo.lock' ':!package.json' | \
+git grep -l "$(cat VERSION)" -- ':!**/yarn.lock' ':!CHANGELOG.md' ':!Cargo.lock' ':!package.json' | \
     xargs sed "${sedi[@]}" \
     -e "s/$(cat VERSION)/$1/g"
 
 # Potential for collisions in package.json files, handle those separately
 # Replace only matching "version": "x.xx.x" and "@solarti/anchor": "x.xx.x"
-git grep -l $(cat VERSION) -- '**/package.json' | \
+git grep -l "$(cat VERSION)" -- '**/package.json' | \
     xargs sed "${sedi[@]}" \
     -e "s/@coral-xyz\/anchor\": \"$(cat VERSION)\"/@coral-xyz\/anchor\": \"$1\"/g" \
     -e "s/\"version\": \"$(cat VERSION)\"/\"version\": \"$1\"/g"
@@ -37,7 +37,7 @@ pushd ts && yarn && popd
 pushd tests && yarn && popd
 pushd examples && yarn && pushd tutorial && yarn && popd && popd
 
-echo $1 > VERSION
+echo "$1" > VERSION
 
 echo "$(git diff --stat | tail -n1) files modified"
 

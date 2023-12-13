@@ -5,7 +5,7 @@ set -euo pipefail
 source scripts/common.sh
 
 DEX_PID="srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX"
-PAYER_FILEPATH="$HOME/.config/solana/id.json"
+PAYER_FILEPATH="$HOME/.config/miraland/id.json"
 CRANK="/home/armaniferrante/Documents/code/src/github.com/project-serum/serum-dex/target/debug/crank"
 VALIDATOR_OUT="./validator-stdout.txt"
 CRANK_LOGS="crank-logs.txt"

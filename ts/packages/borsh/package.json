@@ -1,6 +1,6 @@
 {
   "name": "@solarti/borsh",
-  "version": "0.27.1",
+  "version": "0.27.6",
   "description": "Solarti Anchor Borsh derived from coral-xyz/borsh",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -20,12 +20,12 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@solarti/web3.js": "1.73.2-rc4",
+    "@solarti/web3.js": "1.73.2",
     "bn.js": "^5.1.2",
-    "buffer-layout": "^1.2.0"
+    "buffer-layout": "^1.2.2"
   },
   "peerDependencies": {
-    "@solarti/web3.js": "^1.73.2-rc4"
+    "@solarti/web3.js": "^1.73.2"
   },
   "files": [
     "dist"

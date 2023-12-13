@@ -7,7 +7,7 @@ url = "https://anchor.projectserum.com"
 
 [provider]
 cluster = "localnet"
-wallet = "~/.config/solana/id.json"
+wallet = "~/.config/miraland/id.json"
 
 [scripts]
 test = "./test.sh"

@@ -2494,7 +2494,7 @@ fn validator_flags(
         flags.push(address.clone());
         flags.push(binary_path);
 
-        if let Some(mut idl) = program.idl.as_mut() {
+        if let Some(idl) = program.idl.as_mut() {
             // Add program address to the IDL.
             idl.metadata = Some(serde_json::to_value(IdlTestMetadata { address })?);
 
@@ -2881,7 +2881,7 @@ fn deploy(
             }
 
             let program_pubkey = program.pubkey()?;
-            if let Some(mut idl) = program.idl.as_mut() {
+            if let Some(idl) = program.idl.as_mut() {
                 // Add program address to the IDL.
                 idl.metadata = Some(serde_json::to_value(IdlTestMetadata {
                     address: program_pubkey.to_string(),

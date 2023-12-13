@@ -22,4 +22,4 @@ bytemuck = {version = "1.4.0", features = ["derive", "min_const_generics"]}
 
 [dev-dependencies]
 solarti-anchor-client = { path = "../../../../client", features = ["debug"] }
-miraland-program-test = "1.14.17-rc5"
+miraland-program-test = "1.18.0"

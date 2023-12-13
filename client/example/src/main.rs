@@ -53,7 +53,7 @@ fn main() -> Result<()> {
     let opts = Opts::parse();
 
     // Wallet and cluster params.
-    let payer = read_keypair_file(&*shellexpand::tilde("~/.config/solana/id.json"))
+    let payer = read_keypair_file(&*shellexpand::tilde("~/.config/miraland/id.json"))
         .expect("Example requires a keypair file");
     let url = Cluster::Custom(
         "http://localhost:8899".to_string(),

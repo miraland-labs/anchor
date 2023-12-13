@@ -12,7 +12,7 @@ Example:
 ```toml
 [provider]
 cluster = "localnet"                    # The cluster used for all commands.
-wallet = "~/.config/solana/id.json"     # The keypair used for all commands.
+wallet = "~/.config/miraland/id.json"     # The keypair used for all commands.
 ```
 
 ## scripts (required for testing)

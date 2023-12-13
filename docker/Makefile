@@ -6,7 +6,7 @@ ANCHOR_CLI=v0.27.0
 #
 # Solana toolchain.
 #
-MIRALAND_CLI=v1.14.17
+MIRALAND_CLI=v1.18.0
 #
 # Build version should match the Anchor cli version.
 #

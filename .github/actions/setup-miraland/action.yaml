@@ -1,0 +1,28 @@
+name: "Setup Miraland"
+description: "Setup Miraland"
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/cache@v3
+      name: Cache Miraland Tool Suite
+      id: cache-miraland
+      with:
+        path: |
+          ~/.cache/miraland/
+          ~/.local/share/miraland/
+        key: miraland-${{ runner.os }}-v0000-${{ env.MIRALAND_CLI_VERSION }}
+    - uses: nick-fields/retry@v2
+      if: steps.cache-miraland.outputs.cache-hit != 'true'
+      with:
+        retry_wait_seconds: 300
+        timeout_minutes: 2
+        max_attempts: 10
+        retry_on: error
+        shell: bash
+        command: sh -c "$(curl -sSfL https://release.miraland.top/v${{ env.MIRALAND_CLI_VERSION }}/install)"
+    - run: echo "/home/runner/.local/share/miraland/install/active_release/bin" >> $GITHUB_PATH
+      shell: bash
+    - run: miraland-keygen new --no-bip39-passphrase
+      shell: bash
+    - run: miraland config set --url localhost
+      shell: bash

@@ -3,7 +3,7 @@ seeds = true
 
 [provider]
 cluster = "localnet"
-wallet = "~/.config/solana/id.json"
+wallet = "~/.config/miraland/id.json"
 
 [programs.localnet]
 relations_derivation = "AnchoL61Nt2sgXvrXYUHxRQgEgaJ4ueMg5xJQVyFJ5Gs"

@@ -31,7 +31,7 @@ main() {
     #
     # Bootup validator.
     #
-    solana-test-validator -r \
+    miraland-test-validator -r \
 				--bpf-program $composite_pid ../../tests/composite/target/deploy/composite.so \
 				--bpf-program $basic_2_pid ../../examples/tutorial/basic-2/target/deploy/basic_2.so \
 				--bpf-program $basic_4_pid ../../examples/tutorial/basic-4/target/deploy/basic_4.so \
@@ -54,7 +54,7 @@ main() {
     # Restart validator for multithreaded test
     #
     cleanup
-    solana-test-validator -r \
+    miraland-test-validator -r \
 				--bpf-program $composite_pid ../../tests/composite/target/deploy/composite.so \
 				--bpf-program $basic_2_pid ../../examples/tutorial/basic-2/target/deploy/basic_2.so \
 				--bpf-program $basic_4_pid ../../examples/tutorial/basic-4/target/deploy/basic_4.so \
