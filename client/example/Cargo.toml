@@ -1,7 +1,11 @@
 [package]
 name = "example"
 version = "0.1.0"
-authors = ["Armani Ferrante <armaniferrante@gmail.com>"]
+authors = [
+  "Miraplexer <miraplexer@outlook.com>",
+  "Armani Ferrante <armaniferrante@gmail.com>"
+]
+repository = "https://github.com/miraland-labs/anchor"
 rust-version = "1.59"
 edition = "2021"
 
@@ -17,4 +21,4 @@ events = { path = "../../tests/events/programs/events", features = ["no-entrypoi
 shellexpand = "2.1.0"
 anyhow = "1.0.32"
 clap = { version = "4.0.26", features = ["derive"] }
-miraland-sdk = "1.14.17-rc5"
+miraland-sdk = "1.18.2"

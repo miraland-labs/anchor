@@ -4,7 +4,7 @@ use crate::config::{
 };
 use anchor_client::Cluster;
 use anchor_lang::idl::{IdlAccount, IdlInstruction, ERASED_AUTHORITY};
-use anchor_lang::{AccountDeserialize, AnchorDeserialize, AnchorSerialize};
+use anchor_lang::{AccountDeserialize, AnchorDeserialize};
 use anchor_syn::idl::{EnumFields, Idl, IdlType, IdlTypeDefinitionTy};
 use anyhow::{anyhow, Context, Result};
 use clap::Parser;
@@ -1625,7 +1625,7 @@ fn idl_set_buffer(cfg_override: &ConfigOverride, program_id: Pubkey, buffer: Pub
                 AccountMeta::new(keypair.pubkey(), true),
             ];
             let mut data = anchor_lang::idl::IDL_IX_TAG.to_le_bytes().to_vec();
-            data.append(&mut IdlInstruction::SetBuffer.try_to_vec()?);
+            data.append(&mut borsh::to_vec(&IdlInstruction::SetBuffer)?);
             Instruction {
                 program_id,
                 accounts,
@@ -2328,7 +2328,7 @@ fn validator_flags(
         flags.push(address.clone());
         flags.push(binary_path);
 
-        if let Some(mut idl) = program.idl.as_mut() {
+        if let Some(idl) = program.idl.as_mut() {
             // Add program address to the IDL.
             idl.metadata = Some(serde_json::to_value(IdlTestMetadata { address })?);
 
@@ -2716,7 +2716,7 @@ fn deploy(
             }
 
             let program_pubkey = program.pubkey()?;
-            if let Some(mut idl) = program.idl.as_mut() {
+            if let Some(idl) = program.idl.as_mut() {
                 // Add program address to the IDL.
                 idl.metadata = Some(serde_json::to_value(IdlTestMetadata {
                     address: program_pubkey.to_string(),
@@ -2858,7 +2858,7 @@ fn create_idl_buffer(
             AccountMeta::new_readonly(sysvar::rent::ID, false),
         ];
         let mut data = anchor_lang::idl::IDL_IX_TAG.to_le_bytes().to_vec();
-        data.append(&mut IdlInstruction::CreateBuffer.try_to_vec()?);
+        data.append(&mut borsh::to_vec(&IdlInstruction::CreateBuffer)?);
         Instruction {
             program_id: *program_id,
             accounts,
@@ -2898,7 +2898,7 @@ fn serialize_idl(idl: &Idl) -> Result<Vec<u8>> {
 
 fn serialize_idl_ix(ix_inner: anchor_lang::idl::IdlInstruction) -> Result<Vec<u8>> {
     let mut data = anchor_lang::idl::IDL_IX_TAG.to_le_bytes().to_vec();
-    data.append(&mut ix_inner.try_to_vec()?);
+    data.append(&mut borsh::to_vec(&ix_inner)?);
     Ok(data)
 }
 

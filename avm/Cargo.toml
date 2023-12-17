@@ -1,6 +1,8 @@
 [package]
 name = "avm"
-version = "0.26.0"
+version = "0.26.1"
+authors = ["Miraplexer <miraplexer@outlook.com>"]
+repository = "https://github.com/miraland-labs/anchor"
 rust-version = "1.59"
 edition = "2021"
 

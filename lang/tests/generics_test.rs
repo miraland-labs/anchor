@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 
-use anchor_lang::prelude::borsh::maybestd::io::Write;
+use anchor_lang::prelude::borsh::io::Write;
 use anchor_lang::prelude::*;
 use borsh::{BorshDeserialize, BorshSerialize};
 use solana_program::pubkey::Pubkey;
@@ -39,12 +39,17 @@ where
 #[derive(Copy, Clone)]
 pub struct WrappedU8Array<const N: usize>(u8);
 impl<const N: usize> BorshSerialize for WrappedU8Array<N> {
-    fn serialize<W: Write>(&self, _writer: &mut W) -> borsh::maybestd::io::Result<()> {
+    fn serialize<W: Write>(&self, _writer: &mut W) -> borsh::io::Result<()> {
         todo!()
     }
 }
 impl<const N: usize> BorshDeserialize for WrappedU8Array<N> {
-    fn deserialize(_buf: &mut &[u8]) -> borsh::maybestd::io::Result<Self> {
+    // fn deserialize(_buf: &mut &[u8]) -> borsh::io::Result<Self> {
+    //     todo!()
+    // }
+
+    // MI, for borsh 0.10.3 and above
+    fn deserialize_reader<R: borsh::io::Read>(_reader: &mut R) -> borsh::io::Result<Self> {
         todo!()
     }
 }

@@ -1,10 +1,13 @@
 [package]
 name = "solarti-anchor-cli"
-version = "0.26.0"
-authors = ["armaniferrante <armaniferrante@gmail.com>"]
+version = "0.26.1"
+authors = [
+  "Miraplexer <miraplexer@outlook.com>",
+  "armaniferrante <armaniferrante@gmail.com>"
+]
+repository = "https://github.com/miraland-labs/anchor"
 rust-version = "1.59"
 edition = "2021"
-repository = "https://github.com/coral-xyz/anchor"
 description = "Anchor CLI"
 license = "Apache-2.0"
 
@@ -17,22 +20,23 @@ dev = []
 default = []
 
 [dependencies]
+borsh = { version = "1.2.1", features = ["derive", "unstable__schema"] }
 clap = { version = "4.0.26", features = ["derive"] }
 anyhow = "1.0.32"
 syn = { version = "1.0.60", features = ["full", "extra-traits"] }
-solarti-anchor-lang = { path = "../lang", version = "0.26.0" }
-solarti-anchor-client = { path = "../client", version = "0.26.0" }
-anchor-syn = { path = "../lang/syn", features = ["idl", "init-if-needed"], version = "0.26.0" }
+solarti-anchor-lang = { path = "../lang", version = "0.26.1" }
+solarti-anchor-client = { path = "../client", version = "0.26.1" }
+anchor-syn = { path = "../lang/syn", features = ["idl", "init-if-needed"], version = "0.26.1" }
 serde_json = "1.0"
 shellexpand = "2.1.0"
 toml = "0.5.8"
 semver = "1.0.4"
 serde = { version = "1.0.122", features = ["derive"] }
-miraland-sdk = "1.14.17-rc5"
-miraland-program = "1.14.17-rc5"
-miraland-client = "1.14.17-rc5"
-miraland-cli-config = "1.14.17-rc5"
-miraland-faucet = "1.14.17-rc5"
+miraland-sdk = "1.18.2"
+miraland-program = "1.18.2"
+miraland-client = "1.18.2"
+miraland-cli-config = "1.18.2"
+miraland-faucet = "1.18.2"
 dirs = "4.0"
 heck = "0.4.0"
 flate2 = "1.0.19"

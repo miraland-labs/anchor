@@ -185,7 +185,7 @@ pub trait ZeroCopy: Discriminator + Copy + Clone + Zeroable + Pod {}
 pub trait InstructionData: Discriminator + AnchorSerialize {
     fn data(&self) -> Vec<u8> {
         let mut d = Self::discriminator().to_vec();
-        d.append(&mut self.try_to_vec().expect("Should always serialize"));
+        d.append(&mut borsh::to_vec(&self).expect("Should always serialize"));
         d
     }
 }
@@ -312,7 +312,7 @@ pub mod __private {
     #[doc(hidden)]
     impl ZeroCopyAccessor<Pubkey> for [u8; 32] {
         fn get(&self) -> Pubkey {
-            Pubkey::new(self)
+            Pubkey::try_from(&self[..]).unwrap()
         }
         fn set(input: &Pubkey) -> [u8; 32] {
             input.to_bytes()

@@ -1,8 +1,11 @@
 [package]
 name = "anchor-syn"
-version = "0.26.0"
-authors = ["Serum Foundation <foundation@projectserum.com>"]
-repository = "https://github.com/coral-xyz/anchor"
+version = "0.26.1"
+authors = [
+  "Miraplexer <miraplexer@outlook.com>",
+  "Serum Foundation <foundation@projectserum.com>"
+]
+repository = "https://github.com/miraland-labs/anchor"
 license = "Apache-2.0"
 description = "Anchor syntax parsing and code generation tools"
 rust-version = "1.59"
