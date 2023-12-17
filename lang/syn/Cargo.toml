@@ -1,6 +1,6 @@
 [package]
 name = "anchor-syn"
-version = "0.26.1"
+version = "0.26.0"
 authors = [
   "Miraplexer <miraplexer@outlook.com>",
   "Serum Foundation <foundation@projectserum.com>"

@@ -26,7 +26,7 @@ anyhow = "1.0.32"
 syn = { version = "1.0.60", features = ["full", "extra-traits"] }
 solarti-anchor-lang = { path = "../lang", version = "0.26.1" }
 solarti-anchor-client = { path = "../client", version = "0.26.1" }
-anchor-syn = { path = "../lang/syn", features = ["idl", "init-if-needed"], version = "0.26.1" }
+anchor-syn = { path = "../lang/syn", features = ["idl", "init-if-needed"], version = "0.26.0" }
 serde_json = "1.0"
 shellexpand = "2.1.0"
 toml = "0.5.8"

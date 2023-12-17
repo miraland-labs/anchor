@@ -219,7 +219,7 @@ dependencies = [
 
 [[package]]
 name = "anchor-syn"
-version = "0.26.1"
+version = "0.26.0"
 dependencies = [
  "anyhow",
  "bs58 0.3.1",
@@ -2364,8 +2364,8 @@ dependencies = [
  "serde",
  "serde_derive",
  "serde_json",
- "solarti-token 4.0.0",
- "solarti-token-2022 0.9.0",
+ "solarti-token",
+ "solarti-token-2022",
  "solarti-token-metadata-interface",
  "thiserror",
  "zstd",
@@ -2492,7 +2492,7 @@ dependencies = [
  "miraland-version",
  "serde",
  "serde_derive",
- "solarti-memo 4.0.0",
+ "solarti-memo",
  "thiserror",
  "tokio",
 ]
@@ -2830,7 +2830,7 @@ dependencies = [
  "serde",
  "serde_derive",
  "serde_json",
- "solarti-token-2022 0.9.0",
+ "solarti-token-2022",
  "thiserror",
 ]
 
@@ -3003,10 +3003,10 @@ dependencies = [
  "serde",
  "serde_derive",
  "serde_json",
- "solarti-associated-token-account 2.0.0",
- "solarti-memo 4.0.0",
- "solarti-token 4.0.0",
- "solarti-token-2022 0.9.0",
+ "solarti-associated-token-account",
+ "solarti-memo",
+ "solarti-token",
+ "solarti-token-2022",
  "thiserror",
 ]
 
@@ -3126,8 +3126,8 @@ dependencies = [
  "num-derive 0.3.3",
  "num-traits",
  "shank 0.0.12",
- "solarti-associated-token-account 2.0.0",
- "solarti-token 4.0.0",
+ "solarti-associated-token-account",
+ "solarti-token",
  "thiserror",
 ]
 
@@ -3150,7 +3150,7 @@ dependencies = [
  "arrayref",
  "borsh 1.2.1",
  "miraland-program",
- "solarti-token 4.0.0",
+ "solarti-token",
 ]
 
 [[package]]
@@ -4782,24 +4782,8 @@ dependencies = [
  "miraplex-token-metadata",
  "serum_dex",
  "solarti-anchor-lang",
- "solarti-associated-token-account 1.1.8",
- "solarti-token 3.5.6",
-]
-
-[[package]]
-name = "solarti-associated-token-account"
-version = "1.1.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "36966225488d32cef90c3dfd5297a67ee5c55a15e506e906b92fab0fd2bf8753"
-dependencies = [
- "assert_matches",
- "borsh 0.10.3",
- "miraland-program",
- "num-derive 0.3.3",
- "num-traits",
- "solarti-token 3.5.6",
- "solarti-token-2022 0.6.7",
- "thiserror",
+ "solarti-associated-token-account",
+ "solarti-token",
 ]
 
 [[package]]
@@ -4813,8 +4797,8 @@ dependencies = [
  "miraland-program",
  "num-derive 0.4.1",
  "num-traits",
- "solarti-token 4.0.0",
- "solarti-token-2022 0.9.0",
+ "solarti-token",
+ "solarti-token-2022",
  "thiserror",
 ]
 
@@ -4851,15 +4835,6 @@ dependencies = [
  "sha2 0.10.8",
  "syn 2.0.41",
  "thiserror",
-]
-
-[[package]]
-name = "solarti-memo"
-version = "3.0.7"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a4ecdadda1f3b90e33d2d2c1f4fded247f76f3388d2d3745d53b1ee1cce7f702"
-dependencies = [
- "miraland-program",
 ]
 
 [[package]]
@@ -4925,22 +4900,6 @@ dependencies = [
 
 [[package]]
 name = "solarti-token"
-version = "3.5.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "17273f7df4912364361cab2272b0f5d449c0bb50feb87d7689411aac49d63744"
-dependencies = [
- "arrayref",
- "bytemuck",
- "miraland-program",
- "num-derive 0.3.3",
- "num-traits",
- "num_enum 0.5.11",
- "thiserror",
- "winnow 0.4.1",
-]
-
-[[package]]
-name = "solarti-token"
 version = "4.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3766b4400984182e35cd02fcee1ccb060901c27b1cf3a49b17f2251b86298c10"
@@ -4951,24 +4910,6 @@ dependencies = [
  "num-derive 0.4.1",
  "num-traits",
  "num_enum 0.7.1",
- "thiserror",
-]
-
-[[package]]
-name = "solarti-token-2022"
-version = "0.6.7"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "29e840b83ceaf5ea498ead31f5cf069b0b85192f513fef21b83ba511c4cd9899"
-dependencies = [
- "arrayref",
- "bytemuck",
- "miraland-program",
- "miraland-zk-token-sdk",
- "num-derive 0.3.3",
- "num-traits",
- "num_enum 0.5.11",
- "solarti-memo 3.0.7",
- "solarti-token 3.5.6",
  "thiserror",
 ]
 
@@ -4985,9 +4926,9 @@ dependencies = [
  "num-derive 0.4.1",
  "num-traits",
  "num_enum 0.7.1",
- "solarti-memo 4.0.0",
+ "solarti-memo",
  "solarti-pod",
- "solarti-token 4.0.0",
+ "solarti-token",
  "solarti-token-group-interface",
  "solarti-token-metadata-interface",
  "solarti-transfer-hook-interface",
@@ -5413,7 +5354,7 @@ checksum = "396e4d48bbb2b7554c944bde63101b5ae446cff6ec4a24227428f15eb72ef338"
 dependencies = [
  "indexmap 2.1.0",
  "toml_datetime",
- "winnow 0.5.28",
+ "winnow",
 ]
 
 [[package]]
@@ -5983,15 +5924,6 @@ name = "windows_x86_64_msvc"
 version = "0.48.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ed94fce61571a4006852b7389a063ab983c02eb1bb37b47f8272ce92d06d9538"
-
-[[package]]
-name = "winnow"
-version = "0.4.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ae8970b36c66498d8ff1d66685dc86b91b29db0c7739899012f63a63814b4b28"
-dependencies = [
- "memchr",
-]
 
 [[package]]
 name = "winnow"
